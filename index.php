@@ -56,8 +56,7 @@
 		</div>
 		</div>	
 </section>
-<?php
-if (isset($_POST["aranacakgoogle"])) {
+<?php if (isset($_POST["aranacakgoogle"])) {
 	$a = str_replace(" ", "+", $_POST["aranacak"]);
 	$search = "https://www.google.com/search?q=".$a;
 	Header("Location: $search");
@@ -65,10 +64,7 @@ if (isset($_POST["aranacakgoogle"])) {
 	$a = str_replace(" ", "+", $_POST["aranacakstack"]);
 	$search = "https://stackoverflow.com/search?q=".$a;
 	Header("Location: $search");
-}
-
-
-?>	
+} ?>	
 <section id="navbardown" style="margin-top: 50px">
 	<ul>
 		<p>Made with <3 by AzmeaL	</p>
